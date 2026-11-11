@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="จองวิลล่าสระส่วนตัวออนไลน์ ดูห้องว่างและราคารวมทันที เลือกบริการเสริม ชำระมัดจำได้">
+<meta name="theme-color" content="#064B5A">
+<meta property="og:title" content="บลูลากูน พูลวิลล่า – จองห้องพัก">
+<meta property="og:description" content="วิลล่าสระส่วนตัว พักสบายทั้งกลุ่ม ดูห้องว่างและราคารวมทันที">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏊%3C/text%3E%3C/svg%3E">
+<title>บลูลากูน พูลวิลล่า – จองห้องพัก</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@600;800&family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF8FA;--surface:#fff;--ink:#0A2B35;--mute:#4F6F78;--line:#CFE3E8;--aqua:#12A9BC;--deep:#064B5A;--coral:#E8553F;--on-deep:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#071A20;--surface:#0E2B34;--ink:#E6F4F7;--mute:#8FB1BA;--line:#1C4552;--aqua:#3CC6D8;--deep:#0B5A6B;--coral:#FF7A63}}
+:root[data-theme="dark"]{--bg:#071A20;--surface:#0E2B34;--ink:#E6F4F7;--mute:#8FB1BA;--line:#1C4552;--aqua:#3CC6D8;--deep:#0B5A6B;--coral:#FF7A63}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Sarabun,"Noto Sans Thai",sans-serif}
+h1,h2,h3{font-family:"Noto Serif Thai",Georgia,serif;line-height:1.3;margin:0}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.logo{font-family:"Noto Serif Thai",serif;font-weight:800;font-size:20px;color:var(--deep)}
+@media (prefers-color-scheme:dark){.logo{color:var(--aqua)}}
+nav{display:flex;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px}
+nav button{border:0;background:none;padding:6px 14px;border-radius:999px;cursor:pointer;color:var(--mute)}
+nav button[aria-pressed=true]{background:var(--deep);color:var(--on-deep)}
+.hero{background:linear-gradient(160deg,#0B7C8E 0%,#12A9BC 45%,#7FDDE8 100%);color:#fff;border-radius:22px;padding:38px 26px 30px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:auto -10% -40px -10%;height:90px;background:repeating-radial-gradient(ellipse at 50% 100%,transparent 0 14px,rgba(255,255,255,.18) 15px 17px);}
+.hero h1{font-size:clamp(28px,5vw,46px);max-width:14em}
+.hero p{margin:8px 0 22px;max-width:34em}
+.search{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;background:var(--surface);color:var(--ink);padding:14px;border-radius:16px;position:relative}
+label{display:block;font-size:13px;color:var(--mute);margin-bottom:2px}
+input,select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.btn{border:0;background:var(--coral);color:#fff;padding:11px 20px;border-radius:12px;font-weight:700;cursor:pointer}
+.btn.alt{background:var(--deep)}
+.btn.ghost{background:none;color:var(--coral);border:1px solid var(--coral)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 12px;align-items:center}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 14px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--aqua);color:#032;border-color:var(--aqua)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;margin-bottom:40px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.pic{height:150px;position:relative;display:flex;align-items:flex-end;padding:12px}
+.pic span{background:rgba(0,0,0,.45);color:#fff;border-radius:8px;padding:2px 10px;font-size:13px}
+.card .in{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags i{font-style:normal;font-size:12.5px;background:var(--bg);border-radius:6px;padding:1px 8px;color:var(--mute)}
+.price{font-size:22px;font-weight:700;color:var(--deep)}
+@media (prefers-color-scheme:dark){.price{color:var(--aqua)}}
+.price small{font-size:13px;font-weight:400;color:var(--mute)}
+.sold{color:var(--coral);font-weight:700}
+.modal{position:fixed;inset:0;background:rgba(3,20,26,.6);display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:20px 12px;z-index:20}
+.modal.on{display:flex}
+.sheet{background:var(--surface);border-radius:18px;max-width:560px;width:100%;padding:22px}
+.row{display:flex;justify-content:space-between;gap:10px;padding:4px 0}
+.sum{background:var(--bg);border-radius:12px;padding:12px 14px;margin:14px 0}
+.sum .t{border-top:1px solid var(--line);margin-top:6px;padding-top:6px;font-weight:700;font-size:18px}
+.add{display:flex;gap:10px;align-items:center;padding:6px 0}
+.add input{width:auto}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);font-size:14.5px}
+.st{padding:1px 10px;border-radius:999px;font-size:12.5px;background:var(--aqua);color:#032}
+.st.x{background:var(--line);color:var(--mute)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.stats div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+.stats b{display:block;font-size:24px}
+.err{color:var(--coral);font-size:14px;min-height:20px}
+.empty{padding:28px;text-align:center;color:var(--mute);background:var(--surface);border:1px dashed var(--line);border-radius:14px}
+footer{padding:20px 0 40px;color:var(--mute);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">บลูลากูน พูลวิลล่า</div>
+<nav aria-label="เมนู"><button data-v="book" aria-pressed="true">จองห้องพัก</button><button data-v="mine" aria-pressed="false">การจองของฉัน</button><button data-v="admin" aria-pressed="false">หลังบ้าน</button></nav></header>
+
+<section id="v-book">
+<div class="hero"><h1>วิลล่าสระส่วนตัว พักสบายทั้งกลุ่ม</h1><p>เลือกวันและจำนวนคน ระบบจะแสดงเฉพาะวิลล่าที่ว่างพร้อมราคารวมทุกคืน</p>
+<div class="search">
+<div><label for="ci">เช็คอิน</label><input type="date" id="ci"></div>
+<div><label for="co">เช็คเอาท์</label><input type="date" id="co"></div>
+<div><label for="gu">ผู้เข้าพัก (คน)</label><input type="number" id="gu" min="1" max="30" value="4"></div>
+<div style="align-self:end"><button class="btn" id="go" style="width:100%">ค้นหาห้องว่าง</button></div>
+</div></div>
+<div class="err" id="serr" role="alert"></div>
+<div class="bar"><span>กรอง:</span>
+<button class="chip" data-f="pet" aria-pressed="false">รับสัตว์เลี้ยง</button>
+<button class="chip" data-f="kara" aria-pressed="false">คาราโอเกะ</button>
+<button class="chip" data-f="heat" aria-pressed="false">สระน้ำอุ่น</button>
+<button class="chip" data-f="sea" aria-pressed="false">ติดทะเล</button>
+<select id="sort" style="width:auto" aria-label="เรียงลำดับ"><option value="p">ราคาต่ำ → สูง</option><option value="g">รับคนได้มากสุด</option></select></div>
+<div class="grid" id="list"></div>
+</section>
+
+<section id="v-mine" hidden>
+<h2>การจองของฉัน</h2>
+<p style="color:var(--mute)">แสดงการจองที่ทำจากเบราว์เซอร์เครื่องนี้ หรือค้นหาด้วยรหัสจอง</p>
+<div class="two" style="max-width:420px;margin-bottom:14px"><input id="code" placeholder="เช่น BL-4821" aria-label="รหัสจอง"><button class="btn alt" id="find">ค้นหา</button></div>
+<div id="mine"></div>
+</section>
+
+<section id="v-admin" hidden>
+<h2>แดชบอร์ดหลังบ้าน</h2>
+<div class="stats" id="stats"></div>
+<div class="tw"><table><thead><tr><th>รหัส</th><th>วิลล่า</th><th>ผู้จอง</th><th>เข้าพัก</th><th>ยอดรวม</th><th>สถานะ</th><th></th></tr></thead><tbody id="adm"></tbody></table></div>
+<p style="margin-top:14px"><button class="btn ghost" id="demo">เพิ่มข้อมูลตัวอย่าง</button> <button class="btn ghost" id="clear">ล้างข้อมูลทั้งหมด</button></p>
+</section>
+<footer>ตัวอย่างระบบจองที่ทำงานบนเบราว์เซอร์ล้วน ไม่มีฐานข้อมูล ข้อมูลการจองเก็บในเครื่องของผู้ใช้เท่านั้น การชำระเงินเป็นการจำลอง</footer>
+</div>
+
+<div class="modal" id="m" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="sheet" id="sheet"></div></div>
+
+<script>
+const V=[
+{id:1,n:"วิลล่าคลื่นใส",loc:"หัวหิน",bd:2,g:6,wd:6900,we:8900,c:["#0B7C8E","#7FDDE8"],f:["sea","heat"],t:["สระน้ำอุ่น","ติดทะเล","ห้องครัว"]},
+{id:2,n:"วิลล่าเนินมะพร้าว",loc:"ปราณบุรี",bd:3,g:10,wd:9500,we:12500,c:["#2E8B57","#A6E3B8"],f:["pet","kara"],t:["รับสัตว์เลี้ยง","คาราโอเกะ","โต๊ะพูล"]},
+{id:3,n:"วิลล่าหาดเงิน",loc:"พัทยา",bd:4,g:14,wd:14900,we:19900,c:["#245B9E","#9CC8F5"],f:["kara","sea"],t:["ติดทะเล","คาราโอเกะ","สไลเดอร์"]},
+{id:4,n:"วิลล่าเขาหมอก",loc:"เขาใหญ่",bd:5,g:20,wd:18900,we:24900,c:["#6B4FA8","#C9B7F0"],f:["pet","heat","kara"],t:["สระน้ำอุ่น","รับสัตว์เลี้ยง","ลานบาร์บีคิว"]}];
+const AD=[["bbq","เซ็ตบาร์บีคิว",1500,"ต่อการเข้าพัก"],["bf","อาหารเช้า",250,"ต่อคน"],["bd","ตกแต่งวันเกิด",1200,"ต่อการเข้าพัก"],["sh","รถรับส่ง",800,"ต่อการเข้าพัก"]];
+const CLEAN=500;
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fm=n=>"฿"+Math.round(n).toLocaleString("th-TH");
+let B=[];try{B=JSON.parse(localStorage.getItem("pv")||"[]")}catch(e){}
+const save=()=>{try{localStorage.setItem("pv",JSON.stringify(B))}catch(e){}};
+const iso=d=>d.toISOString().slice(0,10);
+const addD=(s,n)=>{const d=new Date(s+"T00:00:00Z");d.setUTCDate(d.getUTCDate()+n);return iso(d)};
+const nights=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
+const dfmt=s=>new Date(s+"T00:00:00").toLocaleDateString("th-TH",{day:"numeric",month:"short",year:"2-digit"});
+function base(v,a,b){let t=0;for(let d=a;d<b;d=addD(d,1)){const w=new Date(d+"T00:00:00Z").getUTCDay();t+=(w==5||w==6)?v.we:v.wd}return t}
+const free=(v,a,b)=>!B.some(x=>x.vid==v.id&&x.st!="ยกเลิก"&&a<x.out&&b>x.in);
+const filt=new Set();
+const today=iso(new Date());
+$("#ci").min=today;$("#ci").value=addD(today,7);$("#co").value=addD(today,9);
+
+function range(){const a=$("#ci").value,b=$("#co").value;
+ if(!a||!b||b<=a){return null}return[a,b,+$("#gu").value||1]}
+function renderList(){
+ const r=range(),e=$("#serr");e.textContent="";
+ if(!r){e.textContent="เลือกวันเช็คเอาท์ให้หลังวันเช็คอินอย่างน้อย 1 คืน";$("#list").innerHTML="";return}
+ const[a,b,g]=r;let L=V.filter(v=>v.g>=g&&[...filt].every(k=>v.f.includes(k)));
+ L.sort($("#sort").value=="g"?(x,y)=>y.g-x.g:(x,y)=>x.wd-y.wd);
+ if(!L.length){$("#list").innerHTML='<div class="empty" style="grid-column:1/-1">ไม่พบวิลล่าที่รับผู้เข้าพัก '+g+' คนตามตัวกรอง ลองลดตัวกรองหรือจำนวนคน</div>';return}
+ $("#list").innerHTML=L.map(v=>{const ok=free(v,a,b),n=nights(a,b),p=base(v,a,b);
+ return `<article class="card"><div class="pic" style="background:linear-gradient(150deg,${v.c[0]},${v.c[1]})"><span>${v.loc}</span></div>
+ <div class="in"><h3>${v.n}</h3><div style="color:var(--mute)">${v.bd} ห้องนอน · รับสูงสุด ${v.g} คน</div>
+ <div class="tags">${v.t.map(x=>`<i>${x}</i>`).join("")}</div>
+ <div style="margin-top:auto;padding-top:8px">${ok?`<div class="price">${fm(p)} <small>รวม ${n} คืน (เฉลี่ย ${fm(p/n)}/คืน)</small></div>`:'<div class="sold">เต็มในวันที่เลือก</div>'}</div>
+ <button class="btn" data-b="${v.id}" ${ok?"":"disabled"}>${ok?"จองวิลล่านี้":"เต็ม"}</button></div></article>`}).join("")}
+
+function openBook(id){
+ const v=V.find(x=>x.id==id),[a,b,g]=range();
+ $("#sheet").innerHTML=`<h2 id="mt">จอง${v.n}</h2><div style="color:var(--mute)">${dfmt(a)} – ${dfmt(b)} · ${nights(a,b)} คืน · ${g} คน</div>
+ <div class="two" style="margin-top:12px"><div><label for="fn">ชื่อผู้จอง</label><input id="fn" autocomplete="name"></div><div><label for="fp">เบอร์โทร</label><input id="fp" inputmode="tel" autocomplete="tel"></div></div>
+ <h3 style="font-size:16px;margin-top:14px">บริการเสริม</h3>
+ ${AD.map(x=>`<label class="add"><input type="checkbox" data-a="${x[0]}"> <span style="flex:1;color:var(--ink);font-size:16px">${x[1]}</span><span style="color:var(--mute)">${fm(x[2])} ${x[3]}</span></label>`).join("")}
+ <div class="two" style="margin-top:8px"><div><label for="pc">โค้ดส่วนลด (ลอง POOL10)</label><input id="pc"></div><div><label for="pm">ชำระ</label><select id="pm"><option value="f">เต็มจำนวน</option><option value="d">มัดจำ 30%</option></select></div></div>
+ <div class="sum" id="sm"></div><div class="err" id="ber" role="alert"></div>
+ <div style="display:flex;gap:10px;justify-content:flex-end"><button class="btn ghost" id="cx">ปิด</button><button class="btn" id="pay">ยืนยันและชำระเงิน</button></div>`;
+ $("#m").classList.add("on");
+ const calc=()=>{const n=nights(a,b),bs=base(v,a,b);let ad=0,lines="";
+  $$("[data-a]:checked").forEach(c=>{const x=AD.find(y=>y[0]==c.dataset.a),p=x[0]=="bf"?x[2]*g:x[2];ad+=p;lines+=`<div class="row"><span>${x[1]}</span><span>${fm(p)}</span></div>`});
+  const sub=bs+CLEAN+ad,ds=$("#pc").value.trim().toUpperCase()=="POOL10"?Math.round(bs*.1):0,tot=sub-ds,pay=$("#pm").value=="d"?Math.round(tot*.3):tot;
+  $("#sm").innerHTML=`<div class="row"><span>ค่าห้อง ${n} คืน</span><span>${fm(bs)}</span></div><div class="row"><span>ค่าทำความสะอาด</span><span>${fm(CLEAN)}</span></div>${lines}${ds?`<div class="row" style="color:var(--coral)"><span>ส่วนลด POOL10</span><span>−${fm(ds)}</span></div>`:""}
+  <div class="row t"><span>ยอดรวม</span><span>${fm(tot)}</span></div><div class="row"><span>ชำระวันนี้</span><b>${fm(pay)}</b></div>`;return{tot,pay,ad:$$("[data-a]:checked").map(c=>c.dataset.a)}};
+ $("#sheet").oninput=calc;calc();
+ $("#cx").onclick=()=>$("#m").classList.remove("on");
+ $("#pay").onclick=()=>{const nm=$("#fn").value.trim(),ph=$("#fp").value.replace(/\D/g,"");
+  if(!nm){return $("#ber").textContent="กรอกชื่อผู้จอง"}
+  if(ph.length<9){return $("#ber").textContent="กรอกเบอร์โทรอย่างน้อย 9 หลัก"}
+  if(!free(v,a,b)){return $("#ber").textContent="ขออภัย วันที่เลือกถูกจองไปแล้ว"}
+  const c=calc(),code="BL-"+Math.floor(1000+Math.random()*9000);
+  B.push({code,vid:v.id,name:nm,phone:ph,in:a,out:b,g,tot:c.tot,paid:c.pay,add:c.ad,st:c.pay<c.tot?"มัดจำแล้ว":"ชำระแล้ว",at:Date.now()});save();
+  $("#sheet").innerHTML=`<h2 id="mt">จองสำเร็จ</h2><p>รหัสจองของคุณคือ <b style="font-size:22px">${code}</b></p>
+  <div class="sum"><div class="row"><span>${v.n}</span><span>${v.loc}</span></div><div class="row"><span>เข้าพัก</span><span>${dfmt(a)} – ${dfmt(b)}</span></div><div class="row"><span>ชำระแล้ว</span><b>${fm(c.pay)}</b></div>${c.pay<c.tot?`<div class="row"><span>ค้างชำระวันเช็คอิน</span><span>${fm(c.tot-c.pay)}</span></div>`:""}</div>
+  <p style="color:var(--mute)">เก็บรหัสนี้ไว้เพื่อดูหรือยกเลิกการจองในเมนู “การจองของฉัน”</p><div style="text-align:right"><button class="btn" id="ok">ตกลง</button></div>`;
+  $("#sheet").oninput=null;$("#ok").onclick=()=>{$("#m").classList.remove("on");renderList()}}}
+
+function bookRow(x,admin){const v=V.find(y=>y.id==x.vid);const can=x.st!="ยกเลิก";
+ return `<tr><td>${x.code}</td><td>${v.n}</td><td>${esc(x.name)}</td><td>${dfmt(x.in)} – ${dfmt(x.out)}</td><td>${fm(x.tot)}</td><td><span class="st ${can?"":"x"}">${x.st}</span></td><td>${can?`<button class="btn ghost" data-x="${x.code}">ยกเลิก</button>`:""}</td></tr>`}
+function renderMine(list){const L=list||[...B].reverse();
+ $("#mine").innerHTML=L.length?`<div class="tw"><table><thead><tr><th>รหัส</th><th>วิลล่า</th><th>ผู้จอง</th><th>เข้าพัก</th><th>ยอดรวม</th><th>สถานะ</th><th></th></tr></thead><tbody>${L.map(x=>bookRow(x)).join("")}</tbody></table></div>`:'<div class="empty">ยังไม่มีการจอง ไปที่ “จองห้องพัก” เพื่อเริ่มต้น</div>'}
+function renderAdmin(){
+ const live=B.filter(x=>x.st!="ยกเลิก"),rev=live.reduce((s,x)=>s+x.paid,0),nt=live.reduce((s,x)=>s+nights(x.in,x.out),0);
+ const rooms=V.length*30,occ=Math.min(100,nt/rooms*100);
+ $("#stats").innerHTML=`<div>การจองที่ใช้งาน<b>${live.length}</b></div><div>รายได้ที่รับแล้ว<b>${fm(rev)}</b></div><div>คืนที่ขายได้<b>${nt}</b></div><div>อัตราเข้าพัก (30 วัน)<b>${occ.toFixed(0)}%</b></div><div>ราคาเฉลี่ยต่อคืน<b>${nt?fm(live.reduce((s,x)=>s+x.tot,0)/nt):"–"}</b></div>`;
+ $("#adm").innerHTML=B.length?[...B].reverse().map(x=>bookRow(x,1)).join(""):'<tr><td colspan="7" class="empty">ยังไม่มีข้อมูล กด “เพิ่มข้อมูลตัวอย่าง” เพื่อทดลอง</td></tr>'}
+function cancel(code){if(!confirm("ยืนยันยกเลิกการจอง "+code+"?"))return;const x=B.find(y=>y.code==code);if(x)x.st="ยกเลิก";save();refresh()}
+function refresh(){renderList();renderMine();renderAdmin()}
+function show(v){["book","mine","admin"].forEach(k=>$("#v-"+k).hidden=k!=v);$$("nav button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.v==v));if(v=="admin")renderAdmin();if(v=="mine")renderMine()}
+
+document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;
+ if(t.dataset.v)show(t.dataset.v);
+ else if(t.dataset.b){openBook(t.dataset.b)}
+ else if(t.dataset.x)cancel(t.dataset.x);
+ else if(t.dataset.f){const k=t.dataset.f,on=t.getAttribute("aria-pressed")!="true";t.setAttribute("aria-pressed",on);on?filt.add(k):filt.delete(k);renderList()}});
+$("#go").onclick=renderList;$("#sort").onchange=renderList;
+$("#ci").onchange=()=>{if($("#co").value<=$("#ci").value)$("#co").value=addD($("#ci").value,1);renderList()};$("#co").onchange=renderList;$("#gu").onchange=renderList;
+$("#find").onclick=()=>{const q=$("#code").value.trim().toUpperCase();renderMine(q?B.filter(x=>x.code==q):null);if(q&&!B.some(x=>x.code==q))$("#mine").innerHTML='<div class="empty">ไม่พบรหัสจอง '+esc(q)+' ตรวจสอบตัวอักษรอีกครั้ง</div>'};
+$("#demo").onclick=()=>{const n=["สมชาย","มาลี","ปิยะ","นภา"];V.forEach((v,i)=>{const a=addD(today,3+i*4),b=addD(a,2);if(free(v,a,b))B.push({code:"BL-"+(2000+i*111),vid:v.id,name:n[i],phone:"0800000000",in:a,out:b,g:v.g-1,tot:base(v,a,b)+CLEAN,paid:base(v,a,b)+CLEAN,add:[],st:"ชำระแล้ว",at:Date.now()})});save();refresh()};
+$("#clear").onclick=()=>{if(confirm("ล้างข้อมูลการจองทั้งหมด?")){B=[];save();refresh()}};
+$("#m").addEventListener("click",e=>{if(e.target.id=="m")$("#m").classList.remove("on")});
+document.addEventListener("keydown",e=>{if(e.key=="Escape")$("#m").classList.remove("on")});
+refresh();
+</script>
+</body>
+</html>
